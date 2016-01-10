@@ -7,7 +7,7 @@ import httplib, urllib
 import json
 
 def sendCats():
-	t = threading.Timer(3600, sendCats)
+	t = threading.Timer(60, sendCats)
 	t.start()	
 
 	send80 = ""
@@ -47,7 +47,7 @@ def sendCats():
 	conn.close()
 	print data
 
-t = threading.Timer(3600, sendCats)
+t = threading.Timer(60, sendCats)
 t.start()
 
 try:

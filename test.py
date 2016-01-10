@@ -17,7 +17,7 @@ def sendCats():
 	sendBB = ""
 	sendA0 = ""
 
-	check = commands.getoutput("./OneShotSender -r 192.168.10.77 0 0001 0ef001 013001 62 80 . 8F . B0 . B3 . BB . A0 . ")
+	check = commands.getoutput("./OneShotSender -r 192.168.126.104 0 0001 0ef001 013001 62 80 . 8F . B0 . B3 . BB . A0 . ")
 	print check
 	for line in check.splitlines():
 		#print line + "\n"
